@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Gateway UI</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 30px 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .company-logo img {
+      width: 100px;
+      margin-bottom: 10px;
+    }
+
+    .company-name {
+      font-size: 20px;
+      font-weight: bold;
+      color: #003366;
+      margin-bottom: 15px;
+    }
+
+    .heading {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .payment-options {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+
+    .payment-option {
+      flex: 1 1 40%;
+      background-color: #f0f8ff;
+      padding: 2px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #000;
+      font-weight: 800;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .payment-option:hover {
+      background-color: #d1e6f8;
+      transform: scale(1.05);
+    }
+
+    .payment-option img {
+      width: 60px;
+      margin-bottom: 8px;
+    }
+
+    .add-wallet-btn {
+      background-color: #003366;
+      color: white;
+      border: none;
+      padding: 15px 25px;
+      border-radius: 8px;
+      font-size: 22px;
+      cursor: pointer;
+      margin-bottom: 25px;
+      width: 350px;
+      transition: background 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .add-wallet-btn:hover {
+      background-color: #0055aa;
+    }
+
+    .features {
+      text-align: left;
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+
+    .features li {
+      margin: 8px 0;
+      list-style: none;
+    }
+
+    .features li::before {
+      content: "⚡";
+      margin-right: 8px;
+      color: #ff9900;
+    }
+
+    .custom-input {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .custom-input input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .btn-group {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .btn-group button {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .btn-blue {
+      background-color: #0055aa;
+      color: white;
+    }
+
+    .btn-green {
+      background-color: #28a745;
+      color: white;
+    }
+
+    .helpline {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    @media (max-width: 500px) {
+      .payment-option {
+        flex: 1 1 100%;
+      }
+
+      .btn-group {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="company-logo">
+      <img src="ertt.png" alt="Company Logo">
+    </div>
+
+    <div class="company-name">PAYMENT SOLUTION SOFTECH COMPANY</div>
+
+    <div class="heading">Payment Gateway Integration & Wallet Recharge</div>
+
+    <div class="payment-options">
+      <a href="https://your-upi-link.com" class="payment-option">
+        <img src="upi.png" alt="UPI">
+        UPI
+      </a>
+      <a href="error.html" class="payment-option">
+        <img src="https://img.icons8.com/color/48/bank-cards.png" alt="Debit">
+        Debit / Credit
+      </a>
+      <a href="error.html" class="payment-option">
+        <img src="https://img.icons8.com/color/48/bank-building.png" alt="Net Banking">
+        Net Banking
+      </a>
+      <a href="error.html" class="payment-option">
+        <img src="https://img.icons8.com/color/48/wallet--v1.png" alt="Wallet">
+        Wallet
+      </a>
+    </div>
+
+    <a href="upi.html" class="add-wallet-btn">
+      ADD FUND IN WALLET
+    </a>
+
+    <ul class="features">
+      <li>Instant Recharge Facility</li>
+      <li>Lowest Transaction Charges</li>
+      <li>24x7 Customer Support</li>
+      <li>Easy Refund & Settlement</li>
+      <li>Safe & Secure Transactions</li>
+    </ul>
+
+    <div class="custom-input">
+      <input type="text" placeholder="Custom amount">
+      <div class="btn-group">
+        <button class="btn-blue">Add to Wallet</button>
+        <button class="btn-green">Proceed to Payment</button>
+      </div>
+    </div>
+
+    <div class="helpline">
+      Helpline: +91-XXXXXXXXXX
+    </div>
+  </div>
+</body>
+</html>
